@@ -20,7 +20,7 @@
   .header {
     position:relative;
     height: 100vh;
-    background: url(/Fotos/Imagen\ de\ WhatsApp\ 2025-02-12\ a\ las\ 17.14.19_bd884a29.jpg) no-repeat fixed;
+    background: url('/Fotos/Imagen\ de\ WhatsApp\ 2025-02-12\ a\ las\ 17.14.19_bd884a29.jp') no-repeat fixed;
     background-size:cover;
   }
   .header::before {
@@ -79,7 +79,7 @@
   .fiesta-section {
     width:inherit;
     height: 400px;
-    background-image: url(/Fotos/Imagen\ de\ WhatsApp\ 2025-02-12\ a\ las\ 17.14.17_a965074f.jpg);
+    background-image: url('/Fotos/Imagen\ de\ WhatsApp\ 2025-02-12\ a\ las\ 17.14.17_a965074f.jpg');
     font-family: 'Times New Roman', Times, serif;
     text-indent: 10%;
     text-align: left;
