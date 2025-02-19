@@ -1,0 +1,255 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+  }
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+  }
+  section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  h1, h2, p {
+    margin: 10px 0;
+  }
+
+  /* Sección 1: Header con background parallax y texto sobrepuesto */
+  .header {
+    position:relative;
+    height: 100vh;
+    background: url(Imagen\ de\ WhatsApp\ 2025-02-12\ a\ las\ 17.14.19_9f6122de.jpg) no-repeat fixed;
+    background-size:cover;
+  }
+  .header::before {
+    content: "";
+    position:absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .header-content {
+    position:relative;
+    color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 20px;
+    text-align: center;
+    font-size: 150%;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+
+  /* Sección 2: Cuenta regresiva en un círculo */
+  .countdown-section {
+    background: #e3f5fb;
+    opacity: 80%;
+    position: relative;
+  }
+  .countdown-circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background:  #f1f8fb;
+    margin: 0 auto;
+    display:grid;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 4px 8px #d5f2fc;
+    gap: 1%;
+    padding: 1%;
+  }
+  .countdown-circle div {
+    width: 45%;
+    margin: 5px;
+  }
+  .countdown-circle span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9em;
+  }
+  .time-value {
+    font-size: 2em;
+    font-weight:bold;
+  }
+
+  /* Sección 3: Detalles de la Fiesta */
+  .fiesta-section {
+    width:inherit;
+    height: 400px;
+    background-image: url(Imagen\ de\ WhatsApp\ 2025-02-12\ a\ las\ 17.14.17_9288a118.jpg);
+    font-family: 'Times New Roman', Times, serif;
+    text-indent: 10%;
+    text-align: left;
+    padding-top: 5%;
+    background-size: cover;
+  }
+
+  /* Sección 4: Carrusel de fotos */
+  .carousel-section {
+    background: #e3f5fb;
+    background: scroll;
+  }
+  .carousel-container {
+    overflow: hidden;
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  .carousel-item {
+    min-width: 300px;
+    margin: 0 10px;
+  }
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  /* Sección 5: Música */
+  .musica-section {
+    background: #fff;
+  }
+
+  /* Sección 6: Regalos */
+  .regalos-section {
+    background: #f5f5f5;
+  }
+  #cbuNumber {
+    display: none;
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  /* Sección 7: Instagram */
+  .instagram-section {
+    background: #fff;
+  }
+  .instagram-section a {
+    color: #3897f0;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+
+  /* Sección 8: Confirmar Reserva */
+  .confirm-section {
+    background: #f5f5f5;
+    padding: 50px 20px;
+  }
+  .confirm-btn {
+    background: #ff4081;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  .confirm-btn:hover {
+    background: #e73370;
+  }
+
+  /* Modal para el formulario de reserva */
+  .modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0,0,0,0.7);
+  }
+  .modal-content {
+    background: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    position: relative;
+  }
+  .close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  .modal-content input, .modal-content textarea, .modal-content select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .modal-content button {
+    background: #ff4081;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  /* Media Queries para Responsividad */
+  @media (max-width: 768px) {
+    .header-content h1 {
+      font-size: 2em;
+    }
+    .header-content h2 {
+      font-size: 1.5em;
+    }
+    .header-content p {
+      font-size: 1em;
+    }
+    .countdown-circle {
+      width: 200px;
+      height: 200px;
+    }
+    .time-value {
+      font-size: 1.5em;
+    }
+    .carousel-item {
+      min-width: 250px;
+    }
+    .confirm-btn {
+      font-size: 1em;
+      padding: 10px 20px;
+    }
+  }
+  @media (max-width: 480px) {
+    .header-content h1 {
+      font-size: 1.5em;
+    }
+    .header-content h2 {
+      font-size: 1.2em;
+    }
+    .header-content p {
+      font-size: 0.9em;
+    }
+    .countdown-circle {
+      width: 150px;
+      height: 150px;
+    }
+    .time-value {
+      font-size: 1.2em;
+    }
+    .carousel-item {
+      min-width: 200px;
+    }
+    .confirm-btn {
+      font-size: 0.9em;
+      padding: 8px 16px;
+    }
+  }
