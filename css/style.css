@@ -20,7 +20,7 @@
   .header {
     position:relative;
     height: 100vh;
-    background-image: url(/Fotos/foto1.jpg) no-repeat fixed;
+    background-image: url(/Fotos/foto1.jpg);
     background-size:cover;
   }
   .header::before {
