@@ -20,7 +20,7 @@
   .header {
     position:relative;
     height: 100vh;
-    background-image: url(/Fotos/foto1.jpg);
+    background-image: url('/Fotos/foto1.jpg');
     background-size:cover;
   }
   .header::before {
@@ -79,7 +79,7 @@
   .fiesta-section {
     width:inherit;
     height: 400px;
-    background-image: url(/Fotos/foto5.jpg);
+    background-image: url('/Fotos/foto5.jpg');
     font-family: 'Times New Roman', Times, serif;
     text-indent: 10%;
     text-align: left;
