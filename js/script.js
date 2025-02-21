@@ -73,8 +73,8 @@
       
       const mensaje = `Reserva de ${nombre} ${apellido}%0AReservas Mayores: ${mayores}%0AReservas Menores: ${menores}%0ADatos Importantes: ${datosImportantes}`;
       
-      // Número de WhatsApp (sin símbolos, por ejemplo: 5491123456789)
-      const whatsappNumber = "543534093935";
+      // Número de WhatsApp (sin símbolos, por ejemplo: 54934084648)
+      const whatsappNumber = "5435334084648";
       const url = `https://wa.me/${whatsappNumber}?text=${mensaje}`;
       window.open(url, '_blank');
       modal.style.display = "none";
