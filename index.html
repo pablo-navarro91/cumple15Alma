@@ -94,10 +94,10 @@
   <!-- Sección 8: Botón de Confirmar Reserva -->
   <section class="confirm-section">
     <h1>Confirmar reserva hasta el 04/04</h1>
-    <h2>Mayores: <h3>$70000</h3></h2>
-    <h2>Menores: <h3>$28000</h3></h2>
-    <h2>Mesa Principal: <h3>$38000</h3></h2>
-    <h2>Free: <h3>$9000</h3></h2>
+    <h5>Mayores: <p>$70000</p></h5>
+    <h5>Menores: <p>$28000</p></h5>
+    <h5>Mesa Principal: <p>$38000</hp></h5>
+    <h5>Free: <p>$9000</hp></h5>
 
     <button class="confirm-btn" id="openModalBtn">Confirmar Reserva</button>
   </section>
@@ -138,6 +138,31 @@
           <option value="9">9</option>
           <option value="10">10</option>
           <!-- Agrega más opciones si es necesario -->
+          <select id="mayores" required>
+          <option value="" disabled selected>Mayores</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+        <select id="mesaprincipal" required>
+          <option value="" disabled selected>Mesa principal</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
         </select>
         <textarea id="datosImportantes" placeholder="Algún dato importante. Ej: soy vegetariano" rows="3"></textarea>
         <button type="submit">Confirmar Reserva</button>

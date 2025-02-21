@@ -69,6 +69,7 @@
       const apellido = document.getElementById('apellido').value;
       const mayores = document.getElementById('mayores').value;
       const menores = document.getElementById('menores').value;
+      const mesaprincipal = document.getElementById('mesa principal').value;
       const datosImportantes = document.getElementById('datosImportantes').value;
       
       const mensaje = `Reserva de ${nombre} ${apellido}%0AReservas Mayores: ${mayores}%0AReservas Menores: ${menores}%0ADatos Importantes: ${datosImportantes}`;
