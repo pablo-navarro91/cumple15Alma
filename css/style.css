@@ -141,7 +141,7 @@
   /* Sección 8: Confirmar Reserva */
   .confirm-section {
     background: #f5f5f5;
-    padding: 50px 20px;
+    /*padding: 50px 20px;*/
     letter-spacing: 0.1em;
     line-height: 2em;
     text-align: center;
