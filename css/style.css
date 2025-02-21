@@ -146,6 +146,7 @@
     line-height: 2em;
     text-align: center;
     word-spacing: 1em;
+    flex-wrap: wrap;
   }
   .confirm-btn {
     background: #ff4081;
