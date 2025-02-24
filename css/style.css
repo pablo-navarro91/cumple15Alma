@@ -20,7 +20,7 @@
   .header {
     position:relative;
     height: 100vh;
-    background: url('/Fotos/foto18.jpg') no-repeat fixed;
+    background: url('/Fotos/foto1.jpg') no-repeat fixed;
     background-size:cover;
   }
   .alma {
@@ -91,7 +91,7 @@
   .fiesta-section {
     width:auto;
     height: 600px;
-    background-image: url('/Fotos/foto9.jpg');
+    background-image: url('/Fotos/foto7.jpg');
     font-family: 'Times New Roman', Times, serif;
     text-indent: 60%;
     text-align: left;
