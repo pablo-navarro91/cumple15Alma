@@ -10,35 +10,40 @@
   <!-- Sección 1: Invitación con background y datos -->
   <header class="header" >
     <div class="header-content">
-      <p>----  12.04.2025  ----</p>
-      <h1>Alma</h1>
-      <h2>Mis 15 Años</h2>
-      <p>--------</p>
+      <p><hr class="linea">  12.04.2025 <hr class="linea"></p>
+      <h1 class="alma">ALMA</h1>
+      <h3>Mis 15 Años</h3>
+      <p><hr class="linea"></p>
       <p>''</p>
-      <p>Te espero para compartir la alegría de esa noche que será para mi mágica, inolvidable y unica</p>
+      <p class="frase">Te espero para compartir la alegría de esa noche que será para mi mágica, inolvidable y unica</p>
       <p>''</p>
     </div>
   </header>
 
   <!-- Sección 2: Cuenta regresiva en círculo -->
   <section class="countdown-section">
+    <h2><strong>Cuenta Regresiva</strong></h2>
     <div class="countdown-circle" id="countdown">
-      <div>
-        <span class="time-value" id="days">00</span>
-        <span>Días</span>
-      </div>
-      <div>
-        <span class="time-value" id="hours">00</span>
-        <span>Horas</span>
-      </div>
-      <div>
-        <span class="time-value" id="minutes">00</span>
-        <span>Minutos</span>
-      </div>
-      <div>
-        <span class="time-value" id="seconds">00</span>
-        <span>Segundos</span>
-      </div>
+        <div>
+          <span class="time-value" id="days">00</span>
+          <br>
+          <span>Días</span>
+        </div>
+        <div>
+          <span class="time-value" id="hours">00</span>
+          <br>
+          <span>Horas</span>
+        </div>
+        <div>
+          <span class="time-value" id="minutes">00</span>
+          <br>
+          <span>Minutos</span>
+        </div>
+        <div>
+          <span class="time-value" id="seconds">00</span>
+          <br>
+          <span>Segundos</span>
+        </div>
     </div>
   </section>
 
@@ -46,12 +51,11 @@
   <section class="fiesta-section">
     <h2>Fiesta</h2>
     <br>
-    <p>Día: Sábado, 12 de Abril, 2025</p>
+    <p><strong>Día:</strong> Sábado, 12 de Abril, 2025</p>
     <br>
-    <p>Lugar: Greystone</p>
+    <p><strong>Lugar:</strong> Greystone</p>
     <br>
-    
-    <p>Dirección: Ruta 9 - km 565</p>
+    <p><strong>Dirección:</strong> Ruta 9 km 595</p>
   </section>
 
   <!-- Sección 4: Carrusel de fotos -->
@@ -60,11 +64,11 @@
     <div class="carousel-container">
       <div class="carousel-track" id="carouselTrack">
         <!-- Reemplaza las rutas de imagen por las que desees usar -->
-        <div class="carousel-item"><img src="Fotos/foto2.jpg" alt="Recuerdo 1"></div>
-        <div class="carousel-item"><img src="Fotos/foto3.jpg" alt="Recuerdo 2"></div>
-        <div class="carousel-item"><img src="Fotos/foto4.jpg" alt="Recuerdo 3"></div>
-        <div class="carousel-item"><img src="Fotos/foto5.jpg" alt="Recuerdo 4"></div>
-        <div class="carousel-item"><img src="Fotos/foto6.jpg" alt="Recuerdo 5"></div>
+        <div class="carousel-item"><img src="/Fotos/foto1.jpg" alt="Recuerdo 1"></div>
+        <div class="carousel-item"><img src="Fotos/foto10.jpg" alt="Recuerdo 2"></div>
+        <div class="carousel-item"><img src="Fotos/foto2.jpg" alt="Recuerdo 3"></div>
+        <div class="carousel-item"><img src="Fotos/foto12.jpg" alt="Recuerdo 4"></div>
+        <div class="carousel-item"><img src="Fotos/foto15.jpg" alt="Recuerdo 5"></div>
       </div>
     </div>
   </section>
@@ -72,16 +76,9 @@
   <!-- Sección 5: Música -->
   <section class="musica-section">
     <!-- Reproductor de audio (modifica la ruta de la canción) -->
-    <audio autoplay controls>
+    <audio  controls>
       <source src="Musica/musica1.mp3" type="audio/mpeg">
     </audio>
-  </section>
-
-  <!-- Sección 6: Regalos -->
-  <section class="regalos-section">
-    <h2>Regalos</h2>
-    <button id="showCbuBtn">Número de CBU</button>
-    <div id="cbuNumber">CBU: 1234567890123456789012</div>
   </section>
 
   <!-- Sección 7: Link a Instagram -->
@@ -93,12 +90,15 @@
 
   <!-- Sección 8: Botón de Confirmar Reserva -->
   <section class="confirm-section">
-    <h1>Confirmar reserva hasta el 04/04</h1>
-    <h3>Mayores: <h5>$70000</h5></h3>
-    <h3>Menores: <h5>$28000</h5></h3>
-    <h3>Mesa Principal: <h5>$38000</h5></h3>
-    <h3>Free: <h5>$9000</h5></h3>
-
+    <div><h1>Confirmar reserva hasta el 04/04</h1></div>
+    <div class="valores">
+      <div>
+        <h3>Mayores: <h5>$70000</h5></h3>
+        <h3>Menores: <h5>$28000</h5></h3>
+        <h3>Mesa Principal: <h5>$38000</h5></h3>
+        <h3>Free: <h5>$9000</h5></h3>
+      </div>
+    <div>        
     <button class="confirm-btn" id="openModalBtn">Confirmar Reserva</button>
   </section>
 
@@ -140,7 +140,8 @@
         </select>
           <!-- Agrega más opciones si es necesario -->
         <select id="mesaprincipal" required>
-          <option value="" disabled selected>Mesa principal</option>
+          <option value="" disabled selected>Mesa Principal</option>
+          <option value="0">0</option>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -151,6 +152,7 @@
           <option value="8">8</option>
           <option value="9">9</option>
           <option value="10">10</option>
+          <!-- Agrega más opciones si es necesario -->
         </select>
         <textarea id="datosImportantes" placeholder="Algún dato importante. Ej: soy vegetariano" rows="3"></textarea>
         <button type="submit">Confirmar Reserva</button>
