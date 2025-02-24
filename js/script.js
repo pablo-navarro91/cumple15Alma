@@ -37,12 +37,6 @@
     // Cambia de imagen cada 3 segundos
     setInterval(moveCarousel, 3000);
     
-    /* ======== Mostrar/Cerrar CBU ======== */
-    document.getElementById('showCbuBtn').addEventListener('click', () => {
-      const cbuDiv = document.getElementById('cbuNumber');
-      cbuDiv.style.display = (cbuDiv.style.display === "block") ? "none" : "block";
-    });
-    
     /* ======== Modal y Envío de Formulario ======== */
     const modal = document.getElementById('modal');
     const openModalBtn = document.getElementById('openModalBtn');
@@ -72,7 +66,7 @@
       const mesaprincipal = document.getElementById('mesaprincipal').value;
       const datosImportantes = document.getElementById('datosImportantes').value;
       
-      const mensaje = `Reserva de ${nombre} ${apellido}%0AReservas Mayores: ${mayores}%0AReservas Menores: ${menores}%0ADatos Importantes: ${datosImportantes}`;
+      const mensaje = `Reserva de ${nombre} ${apellido}%0AReservas Mayores: ${mayores}%0AReservas Menores: ${menores}%0AReservas Mesa Principal: ${mesaprincipal}%0ADatos Importantes: ${datosImportantes}`;
       
       // Número de WhatsApp (sin símbolos, por ejemplo: 54934084648)
       const whatsappNumber = "5493534084648";
