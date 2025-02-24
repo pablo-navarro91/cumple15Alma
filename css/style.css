@@ -20,8 +20,19 @@
   .header {
     position:relative;
     height: 100vh;
-    background-image: url('/Fotos/foto1.jpg');
+    background: url('/Fotos/foto18.jpg') no-repeat fixed;
     background-size:cover;
+  }
+  .alma {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight:lighter;
+  }
+  .linea {
+    width: 20%;
+  }
+  .frase {
+    font-family: brush script MT;
+    font-size: 1.5em;
   }
   .header::before {
     content: "";
@@ -44,22 +55,23 @@
   .countdown-section {
     background: #e3f5fb;
     opacity: 80%;
-    position: relative;
+    position:static;
   }
   .countdown-circle {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
+    width: 50%;
+    height: 150px;
+    border-radius: 10%;
     background:  #f1f8fb;
     margin: 0 auto;
-    display:grid;
-    flex-wrap: wrap;
+    display:inline-flex;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
     box-shadow: 5px 4px 8px #d5f2fc;
     gap: 1%;
-    padding: 1%;
+    padding: 0.5em;
   }
+  
   .countdown-circle div {
     width: 45%;
     margin: 5px;
@@ -68,7 +80,7 @@
     display: block;
     width: 100%;
     text-align: center;
-    font-size: 0.9em;
+    font-size: 1em;
   }
   .time-value {
     font-size: 2em;
@@ -77,16 +89,26 @@
 
   /* Sección 3: Detalles de la Fiesta */
   .fiesta-section {
-    width:inherit;
-    height: 400px;
-    background-image: url('/Fotos/foto5.jpg');
+    width:auto;
+    height: 600px;
+    background-image: url('/Fotos/foto9.jpg');
     font-family: 'Times New Roman', Times, serif;
-    text-indent: 10%;
+    text-indent: 60%;
     text-align: left;
-    padding-top: 5%;
-    background-size: cover;
+    padding-top: 10%;
   }
-
+  .caja_fiesta {
+    background-color: #f1f8fbe3;
+    opacity: 50%;
+    height: 55%;
+    width: 20%;
+    border-radius: 10%;
+    box-shadow: 0 0 20px 10px #1c556d67;
+    position:relative;
+    background-size: cover;
+    margin-right: 10%;
+    margin-top: 5%;
+  }
   /* Sección 4: Carrusel de fotos */
   .carousel-section {
     background: #e3f5fb;
@@ -117,17 +139,6 @@
     background: #fff;
   }
 
-  /* Sección 6: Regalos */
-  .regalos-section {
-    background: #f5f5f5;
-  }
-  #cbuNumber {
-    display: none;
-    margin-top: 10px;
-    font-size: 1.2em;
-    font-weight: bold;
-  }
-
   /* Sección 7: Instagram */
   .instagram-section {
     background: #fff;
@@ -142,11 +153,10 @@
   .confirm-section {
     background: #f5f5f5;
     /*padding: 50px 20px;*/
-    letter-spacing: 0.1em;
     line-height: 2em;
-    text-align: center;
-    word-spacing: 1em;
-    flex-wrap: wrap;
+    text-align:center;
+  }
+  .valores {
   }
   .confirm-btn {
     background: #ff4081;
