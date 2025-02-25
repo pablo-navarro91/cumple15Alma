@@ -92,26 +92,24 @@
   .fiesta-section {
     width:inherit;
     height: 600px;
-    background-image: url('/Fotos/foto9.jpg');
+    background-image: url('./Fotos/foto9.jpg');
     font-family: 'Times New Roman', Times, serif;
     text-indent: 10%;
-    text-align: right;
-    padding-top: 5%;
-    background-size: cover;
+    text-align: left;
+    padding-top: 10%;
+    background-size:100%;
   }
-  .caja_fiesta {
-    background-color: #f1f8fb;
+  .caja-fiesta {
+    background-color: #d5f2fc;
     opacity: 70%;
-    height: 55%;
+    height: 70%;
     width: 20%;
     border-radius: 10%;
     text-align:left;
     box-shadow: 0 0 20px 10px #1c556d67;
-    position:relative;
-    background-size: cover;
-    margin-right: 50%;
-    margin-top: 5%;
+    margin-right: 30%;
     float: right;
+    padding-top: 2%;
   }
   /* Sección 4: Carrusel de fotos */
   .carousel-section {
