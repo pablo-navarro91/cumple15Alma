@@ -18,11 +18,10 @@
 
   /* Sección 1: Header con background parallax y texto sobrepuesto */
   .header {
-    background-color: #b3e5fc; /* Color de fondo celeste */
-    background-image: url('Fotos/foto18.jpg'); /* Ruta a la imagen de flores celestes */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    position:relative;
+    height: 100vh;
+    background: url('../Fotos/foto18.jpg') no-repeat;
+    background-size:cover;
   }
   .alma {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
