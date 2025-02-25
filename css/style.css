@@ -20,7 +20,7 @@
   .header {
     position:relative;
     height: 100vh;
-    background: url('../Fotos/foto18.jpg') no-repeat fixed;
+    background: url('/Fotos/foto18.jpg') no-repeat fixed;
     background-size:cover;
   }
   .alma {
@@ -89,9 +89,9 @@
 
   /* Sección 3: Detalles de la Fiesta */
   .fiesta-section {
-    width:100%;
+    width:inherit;
     height: 600px;
-    background-image: url('./Fotos/foto9.jpg');
+    background-image: url('/Fotos/foto9.jpg');
     font-family: 'Times New Roman', Times, serif;
     text-indent: 10%;
     text-align: left;
@@ -109,7 +109,7 @@
     margin-right: 30%;
     float: right;
     padding-top: 2%;
-  }
+    }
   /* Sección 4: Carrusel de fotos */
   .carousel-section {
     background: #e3f5fb;
