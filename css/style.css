@@ -91,9 +91,9 @@
   .fiesta-section {
     width:auto;
     height: 600px;
-    background-image: url('/Fotos/foto7.jpg');
+    background: url("/Fotos/foto1.jpg")
     font-family: 'Times New Roman', Times, serif;
-    text-indent: 60%;
+    text-indent: 50%;
     text-align: left;
     padding-top: 10%;
   }
