@@ -90,7 +90,7 @@
 
   /* Sección 3: Detalles de la Fiesta */
   .fiesta-section {
-    width:inherit;
+    width:100%;
     height: 600px;
     background-image: url('./Fotos/foto9.jpg');
     font-family: 'Times New Roman', Times, serif;
