@@ -20,7 +20,7 @@
   .header {
     position:relative;
     height: 100vh;
-    background: url('../Fotos/foto18.jpg') no-repeat fixed;
+    background: url('../Fotos/foto18.JPG') no-repeat fixed;
     background-size:cover;
   }
   .alma {
@@ -108,7 +108,7 @@
     box-shadow: 0 0 20px 10px #1c556d67;
     position:relative;
     background-size: cover;
-    margin-right: 5%;
+    margin-right: 50%;
     margin-top: 5%;
     float: right;
   }
