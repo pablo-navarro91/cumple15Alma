@@ -20,7 +20,7 @@
   .header {
     position:relative;
     height: 100vh;
-    background: url('/Fotos/foto18.jpg') no-repeat fixed;
+    background: url('https://github.com/pablo-navarro91/cumple15Alma/blob/main/Fotos/foto18.jpg') no-repeat fixed;
     background-size:cover;
   }
   .alma {
